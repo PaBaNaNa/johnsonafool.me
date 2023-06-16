@@ -1,0 +1,7 @@
+redis??
+
+firebase for contact
+
+anyalytic (https://app.posthog.com/ingestion/web)
+
+some article can migrate to notion
