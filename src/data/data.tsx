@@ -13,8 +13,9 @@ import InstagramIcon from "../components/Icon/InstagramIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
 import StackOverflowIcon from "../components/Icon/StackOverflowIcon";
 import TwitterIcon from "../components/Icon/TwitterIcon";
-import aiTestimonialImage from "../images/generativeai.webp";
+import aiTestimonialImage from "../images/generativeai.png";
 import heroImage from "../images/header-background.webp";
+import porfolioImageNpcSite from "../images/portfolio/npc-site.jpg";
 // import heroImage from "../images/background.webp";
 import porfolioImage1 from "../images/portfolio/portfolio-1.jpg";
 import porfolioImage2 from "../images/portfolio/portfolio-2.jpg";
@@ -47,8 +48,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: "React Resume Template",
-  description: "Example site built with Tim Baker's react resume template",
+  title: "Johnson Tseng",
+  description: "Johnson Tseng's personal website",
 };
 
 /**
@@ -76,7 +77,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Taipei based college student, now interesting in{" "}
+        I'm a college student from Taipei, interesting in{" "}
         <strong className="text-stone-100">Full Stack Development</strong>,
         currently working at{" "}
         <strong className="text-stone-100">City Science, MIT Media Lab</strong>{" "}
@@ -84,10 +85,11 @@ export const heroData: Hero = {
         makers for urban progress.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In the realm of leisure, you can catch me embark upon{" "}
+        In my leisure, you can catch me embark upon{" "}
         <strong className="text-stone-100">Outdoor Activities</strong>,
-        immersing on <strong className="text-stone-100">Postmodernist</strong>,
-        or engaging fulfilling{" "}
+        immersing on{" "}
+        <strong className="text-stone-100">Postmodernist Literature</strong>, or
+        engaging in{" "}
         <strong className="text-stone-100">Volunteering Actives</strong>.
       </p>
     </>
@@ -119,7 +121,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I am a senior year student currently working in MIT Media Lab Lab @ Taipei, 
-  My previous programming experience including  C, C#, Python, TypeScript, SQL, Shell Script, Git, Docker, React.js, GraphQL, 
+  My previous programming experience including  C, C#, Python, TypeScript, SQL, Git, Docker, React.js, GraphQL, 
   Tensorflow, FastAPI, Unity`,
   aboutItems: [
     { label: "Location", text: "Taipei, Taiwan", Icon: MapIcon },
@@ -246,10 +248,11 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage4,
   },
   {
-    title: "Project title 5",
-    description: "Give a short description of your project here.",
-    url: "https://timbaker.me",
-    image: porfolioImage5,
+    title: "NTUT Programming Club Animated Introduction",
+    description:
+      "Introduce our club using scroll animation. Built with Vue.js and Vite",
+    url: "https://ntut-club-animation.vercel.app",
+    image: porfolioImageNpcSite,
   },
   {
     title: "Project title 6",
@@ -353,19 +356,19 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: "John Doe",
-      text: "Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.",
+      text: "A photograph of a busy street in a downtown area, with buildings and traffic in the background, during the golden hour with warm, orange lighting, and shot with a tilt-shift lens using a 24mm lens. (臺北市敦化南路1段)",
       image:
         "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg",
     },
     {
       name: "Jane Doe",
-      text: "Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).",
+      text: "A sketch of a modern building street view captured at dusk with a warm orange light, showcasing the busy street with pedestrians and vehicles passing by, in the bustling city of Tokyo, Japan. (忠孝復興SOGO)",
       image:
         "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg",
     },
     {
       name: "Someone else",
-      text: "Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.",
+      text: "A photograph of an intersection on a street, showcasing the revitalization efforts taken by the city. The photo should include newly planted trees and modern buildings replacing the old ones, and a bus route passing through the intersection, highlighting the improved public transportation infrastructure. during the golden hour with warm, orange lighting, and shot with a tilt-shift lens using a 24mm lens. (37民權東路二段)",
       image:
         "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg",
     },

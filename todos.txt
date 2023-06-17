@@ -3,5 +3,8 @@ redis??
 firebase for contact
 
 anyalytic (https://app.posthog.com/ingestion/web)
+    - if not work then use bitly...?
 
 some article can migrate to notion
+
+framer motion
