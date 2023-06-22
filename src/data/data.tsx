@@ -28,6 +28,7 @@ import porfolioImage8 from "../images/portfolio/portfolio-8.jpg";
 import porfolioImage9 from "../images/portfolio/portfolio-9.jpg";
 import porfolioImage10 from "../images/portfolio/portfolio-10.jpg";
 import porfolioImage11 from "../images/portfolio/portfolio-11.jpg";
+import porfolioImageTaipeiBasinSite from "../images/portfolio/taipei-basin-site.jpg";
 // import profilepic from "../images/profilepic.jpg";
 import profilepic from "../images/profile.jpg";
 // import testimonialImage from "../images/testimonial.webp";
@@ -273,10 +274,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage8,
   },
   {
-    title: "Project title 9",
+    title: "CSL x TUIC Taipei Basin Dashboard",
     description: "Give a short description of your project here.",
-    url: "https://timbaker.me",
-    image: porfolioImage9,
+    url: "https://taipei-basin-dashboard.vercel.app/",
+    image: porfolioImageTaipeiBasinSite,
   },
   {
     title: "Project title 10",
