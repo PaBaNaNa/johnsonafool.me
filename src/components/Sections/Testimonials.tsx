@@ -28,12 +28,19 @@ const Testimonials: FC = memo(() => {
 
   const { width } = useWindow();
 
-  const { imageSrc, testimonials } = testimonial;
+  const { imageSrc, testimonials, imageSrcCollection } = testimonial;
 
   const resolveSrc = useMemo(() => {
     if (!imageSrc) return undefined;
     return typeof imageSrc === "string" ? imageSrc : imageSrc.src;
   }, [imageSrc]);
+
+  const resolveSrcCollection = useMemo(() => {
+    if (!imageSrcCollection) return undefined;
+    return imageSrcCollection.map((src) => {
+      return typeof src === "string" ? src : src.src;
+    });
+  }, [imageSrcCollection]) as any;
 
   // Mobile iOS doesn't allow background-fixed elements
   useEffect(() => {
@@ -90,7 +97,11 @@ const Testimonials: FC = memo(() => {
           parallaxEnabled && "bg-fixed",
           { "bg-neutral-700": !imageSrc }
         )}
-        style={imageSrc ? { backgroundImage: `url(${resolveSrc}` } : undefined}
+        style={
+          imageSrc
+            ? { backgroundImage: `url(${resolveSrcCollection[activeIndex]}` }
+            : undefined
+        }
       >
         <div className="z-10 w-full max-w-screen-md px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/60 p-6 shadow-lg">

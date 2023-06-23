@@ -14,8 +14,13 @@ import LinkedInIcon from "../components/Icon/LinkedInIcon";
 import StackOverflowIcon from "../components/Icon/StackOverflowIcon";
 import TwitterIcon from "../components/Icon/TwitterIcon";
 import aiTestimonialImage from "../images/generativeai.png";
+import aiImageOne from "../images/generativeai-1.png";
 import heroImage from "../images/header-background.webp";
+import heroImageMediaLab from "../images/media-lab.webp";
+import porfolioImageCoralTrack from "../images/portfolio/coral-track.jpg";
 import porfolioImageNpcSite from "../images/portfolio/npc-site.jpg";
+import porfolioImageOpenhci from "../images/portfolio/openhci.jpg";
+import porfolioImagePblCar from "../images/portfolio/pbl-car.jpg";
 // import heroImage from "../images/background.webp";
 import porfolioImage1 from "../images/portfolio/portfolio-1.jpg";
 import porfolioImage2 from "../images/portfolio/portfolio-2.jpg";
@@ -29,8 +34,10 @@ import porfolioImage9 from "../images/portfolio/portfolio-9.jpg";
 import porfolioImage10 from "../images/portfolio/portfolio-10.jpg";
 import porfolioImage11 from "../images/portfolio/portfolio-11.jpg";
 import porfolioImageTaipeiBasinSite from "../images/portfolio/taipei-basin-site.jpg";
+import porfolioImageTaipeiBlueprint from "../images/portfolio/taipei-blueprint.jpg";
 // import profilepic from "../images/profilepic.jpg";
 import profilepic from "../images/profile.jpg";
+import profilepicBlackWhite from "../images/profile-black-white.jpg";
 // import testimonialImage from "../images/testimonial.webp";
 import {
   About,
@@ -73,7 +80,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
+  imageSrc: heroImageMediaLab,
   name: `I'm Johnson Tseng.`,
   description: (
     <>
@@ -81,9 +88,21 @@ export const heroData: Hero = {
         I'm a college student from Taipei, interesting in{" "}
         <strong className="text-stone-100">Full Stack Development</strong>,
         currently working at{" "}
-        <strong className="text-stone-100">City Science, MIT Media Lab</strong>{" "}
+        <strong className="text-stone-100">
+          City Science Taipei, MIT Media Lab
+        </strong>{" "}
         transforming cities through innovative research and empowering decision
         makers for urban progress.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I often use <strong className="text-stone-100">johnsonafool</strong> as
+        my account ID, which was inspired by the quote of Steve Jobs{" "}
+        <strong className="text-stone-100">Stay hungry. Stay foolish.</strong> I
+        have adopted the nickname as a reminder of the power of staying curious,
+        thinking differently, and maintaining a childlike sense of wonder. Just
+        as Steve Jobs emphasized the importance of remaining foolish, I strive
+        to approach each opportunity with an open mind, ready to explore new
+        perspectives and push the boundaries of what is possible.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my leisure, you can catch me embark upon{" "}
@@ -109,7 +128,7 @@ export const heroData: Hero = {
     //   Icon: ArrowDownTrayIcon,
     // },
     {
-      href: `#${SectionId.Contact}`,
+      href: `mailto:johnsonafool@gmail.com`,
       text: "Contact",
       primary: false,
     },
@@ -120,7 +139,7 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
+  profileImageSrc: profilepicBlackWhite,
   description: `I am a senior year student currently working in MIT Media Lab Lab @ Taipei, 
   My previous programming experience including  C, C#, Python, TypeScript, SQL, Git, Docker, React.js, GraphQL, 
   Tensorflow, FastAPI, Unity`,
@@ -225,16 +244,17 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: "Project title 1",
-    description: "Give a short description of your project here.",
+    title: "Self Driving Car",
+    description: "Win a International Project Based Learning Competition",
     url: "https://timbaker.me",
-    image: porfolioImage1,
+    image: porfolioImagePblCar,
   },
   {
-    title: "Project title 2",
-    description: "Give a short description of your project here.",
+    title: "OpenHCI 2022 Project",
+    description:
+      "Campus Chicken Crisis: Betting Half of the Future. Gaining Best Technical Achievement Award",
     url: "https://timbaker.me",
-    image: porfolioImage2,
+    image: porfolioImageOpenhci,
   },
   {
     title: "Project title 3",
@@ -262,10 +282,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage6,
   },
   {
-    title: "Project title 7",
+    title: "Taipei Blueprint",
     description: "Give a short description of your project here.",
-    url: "https://timbaker.me",
-    image: porfolioImage7,
+    url: "taipei-blueprint.vercel.app",
+    image: porfolioImageTaipeiBlueprint,
   },
   {
     title: "Project title 8",
@@ -274,7 +294,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage8,
   },
   {
-    title: "CSL x TUIC Taipei Basin Dashboard",
+    title: "CSL x TUIC Smart Taipei",
     description: "Give a short description of your project here.",
     url: "https://taipei-basin-dashboard.vercel.app/",
     image: porfolioImageTaipeiBasinSite,
@@ -286,10 +306,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage10,
   },
   {
-    title: "Project title 11",
-    description: "Give a short description of your project here.",
+    title: "Object Detection and Tracking in Edge Device",
+    description: "Using Tensorflow Lite and OpenCV to detect and track object",
     url: "https://timbaker.me",
-    image: porfolioImage11,
+    image: porfolioImageCoralTrack,
   },
 ];
 
@@ -303,10 +323,24 @@ export const education: TimelineItem[] = [
     title:
       "Bachelor Major in Engineering Science, Double Major in Computer Science",
     content: (
-      <p>
-        Describe your experience at school, what you learned, what useful skills
-        you have acquired etc.
-      </p>
+      <div className="flex flex-col gap-4">
+        <p>
+          During my time at university, I have acquired a versatile skill set
+          that includes understanding in programming languages such as
+          TypeScript, Python, and C++ . Collaborating with talented peers and
+          dedicated faculty members, as well as hands-on experience with various
+          development frameworks and tools. I am adept at software development,
+          data analysis, and problem-solving, and I have taken course including
+          databases, algorithms, and computer networks etc.
+        </p>
+        <p>
+          In addition, my involvement includes join few labs, active
+          participation in the several clubs, and engagement in various
+          extracurricular activities and competitions, which not only broadened
+          my skill set, but also strengthened my ability to collaborate,
+          communicate effectively, and thrive in diverse environments.
+        </p>
+      </div>
     ),
   },
   // {
@@ -324,15 +358,68 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: "March 2010 - Present",
-    location: "Awesome Development Company",
-    title: "Senior UX Engineer",
+    date: "March 2022 - Present",
+    location: "MIT Media Lab",
+    title: "Undergraduate Research Opportunity Program",
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies
-        you have been working with, and anything else that would be useful for
-        an employer to know.
-      </p>
+      <div className="flex flex-col gap-4">
+        <p>
+          Working with a insightful project, CityScope, dedicating to leveraging
+          data to solve complex problems in modern cities. The CityScope project
+          aimed to analyze vast amounts of urban data, ranging from
+          transportation patterns to energy consumption, in order to gain
+          insights into city dynamics and develop innovative solutions.
+        </p>
+        <p>
+          My work include data analysis, data engineering, machine learning,
+          deep learning and visualization tools to uncover meaningful patterns
+          and trends. This allowed myself to gain insights into the functioning
+          of the city, detect inefficiencies, and propose data-driven solutions
+          for urban planning and development. Working here not only exposed me
+          to cutting-edge research methodologies but also fostered a culture of
+          collaboration and innovation.
+        </p>
+        <p>
+          Skills: Problem Solving, Collaboration, Interdisciplinary Research,
+          Data Engineering, Data Science, Predictive Modeling, Edge Computing
+          Programming, Web Development
+        </p>
+      </div>
+    ),
+  },
+  {
+    date: "June 2022 - June 2022",
+    location: "National Taipei University of Technology",
+    title: "President of School Programming Club",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>
+          As the President of the School Programming Club, I developed and
+          conducted programming workshops and courses, teaching fundamental
+          concepts and practical skills to students of all levels in plain
+          words, through hands-on coding exercises and collaborative projects.
+          Aside for programming, I also organized few social events and
+          activities to promote the club and attract new members.
+        </p>
+        <p>
+          In addition to teaching, I actively contributed to various club owned
+          projects, I collaborated with core club members on software
+          development initiatives, ranging from mobile applications (TAT) to
+          web-based systems (Club Official Site) and social app chatbot service
+          (Discord, Line). One of my significant accomplishments was serving as
+          a project manager for the school course app, TAT. Recognizing the need
+          for efficient project management, I implemented agile development
+          methodologies learned from CityScope Experience, enabling our team to
+          adapt to changing requirements and deliver high-quality results in a
+          timely manner. By effectively coordinating the efforts of team members
+          and fostering effective communication, we were able to deliver a
+          feature-rich beta version of the app.
+        </p>
+        <p>
+          Skills: Leadership, Team Management, Project Management, Agile
+          Development, Software Development
+        </p>
+      </div>
     ),
   },
   {
@@ -354,22 +441,36 @@ export const experience: TimelineItem[] = [
  */
 export const testimonial: TestimonialSection = {
   imageSrc: aiTestimonialImage,
+  imageSrcCollection: [aiTestimonialImage, aiImageOne, aiTestimonialImage],
   testimonials: [
     {
       name: "John Doe",
-      text: "A photograph of a busy street in a downtown area, with buildings and traffic in the background, during the golden hour with warm, orange lighting, and shot with a tilt-shift lens using a 24mm lens. (臺北市敦化南路1段)",
+      text: `A photograph of a busy street in a downtown area, 
+      with buildings and traffic in the background, 
+      during the golden hour with warm, orange lighting, 
+      and shot with a tilt-shift lens using a 24mm lens. (臺北市敦化南路一段)`,
       image:
         "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg",
     },
     {
       name: "Jane Doe",
-      text: "A sketch of a modern building street view captured at dusk with a warm orange light, showcasing the busy street with pedestrians and vehicles passing by, in the bustling city of Tokyo, Japan. (忠孝復興SOGO)",
+      text: `A sketch of a modern building street view captured at dusk with 
+      a warm orange light, showcasing the busy street with pedestrians 
+      and vehicles passing by, in the bustling city of Tokyo, 
+      Japan. (忠孝復興 SOGO)`,
       image:
         "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg",
     },
     {
       name: "Someone else",
-      text: "A photograph of an intersection on a street, showcasing the revitalization efforts taken by the city. The photo should include newly planted trees and modern buildings replacing the old ones, and a bus route passing through the intersection, highlighting the improved public transportation infrastructure. during the golden hour with warm, orange lighting, and shot with a tilt-shift lens using a 24mm lens. (37民權東路二段)",
+      text: `A photograph of an intersection on a street, 
+      showcasing the revitalization efforts taken by the city. 
+      The photo should include newly planted trees and modern 
+      buildings replacing the old ones, and a bus route passing 
+      through the intersection, highlighting the improved public 
+      transportation infrastructure. during the golden hour with warm, 
+      orange lighting, and shot with a tilt-shift lens 
+      using a 24mm lens. (民權東路二段)`,
       image:
         "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg",
     },
