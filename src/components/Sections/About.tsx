@@ -37,7 +37,7 @@ const About: FC = memo(() => {
             </p>
           </div>
           <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {aboutItems.map(({ label, text, Icon }, idx) => (
+            {aboutItems.map(({ label, text }, idx) => (
               <li className="col-span-1 flex  items-start gap-x-2" key={idx}>
                 <span className="text-sm font-bold text-neutral-400">
                   {label}:
