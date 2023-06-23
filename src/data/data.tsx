@@ -85,18 +85,19 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a college student from Taipei, interesting in{" "}
-        <strong className="text-stone-100">Full Stack Development</strong>,
+        Hello, I am Johnson Tseng (曾紘遠) a college student from Taipei. I am
+        interesting in{" "}
+        <strong className="text-stone-100">Full Stack Development</strong>, and
         currently working at{" "}
         <strong className="text-stone-100">
           City Science Taipei, MIT Media Lab
         </strong>{" "}
-        transforming cities through innovative research and empowering decision
-        makers for urban progress.
+        transforming cities through aiming at making urban city better, by doing
+        research and survey.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I often use <strong className="text-stone-100">johnsonafool</strong> as
-        my account ID, which was inspired by the quote of Steve Jobs{" "}
+        my user name or ID, which was inspired by the quote of Steve Jobs{" "}
         <strong className="text-stone-100">Stay hungry. Stay foolish.</strong> I
         have adopted the nickname as a reminder of the power of staying curious,
         thinking differently, and maintaining a childlike sense of wonder. Just
@@ -327,11 +328,11 @@ export const education: TimelineItem[] = [
         <p>
           During my time at university, I have acquired a versatile skill set
           that includes understanding in programming languages such as
-          TypeScript, Python, and C++ . Collaborating with talented peers and
-          dedicated faculty members, as well as hands-on experience with various
-          development frameworks and tools. I am adept at software development,
-          data analysis, and problem-solving, and I have taken course including
-          databases, algorithms, and computer networks etc.
+          TypeScript, Python, and C++ . Collaborating with peers, as well as
+          hands-on experience with various development frameworks and tools. I
+          am adept at software development, data analysis, and problem-solving,
+          and I have taken course including databases, algorithms, and computer
+          networks etc.
         </p>
         <p>
           In addition, my involvement includes join few labs, active

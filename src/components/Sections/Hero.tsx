@@ -6,6 +6,7 @@ import { FC, memo } from "react";
 import { heroData, SectionId } from "../../data/data";
 import Section from "../Layout/Section";
 import Socials from "../Socials";
+import TypeWriter from "../TypeWriter";
 
 const Hero: FC = memo(() => {
   const { imageSrc, name, description, actions } = heroData;
@@ -22,8 +23,8 @@ const Hero: FC = memo(() => {
         />
         <div className="z-10  max-w-screen-lg px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
-            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">
-              {name}
+            <h1 className="py-4 text-4xl font-semibold text-white sm:text-5xl lg:text-7xl">
+              <TypeWriter />
             </h1>
             {description}
             <div className="flex gap-x-4 text-neutral-100">
