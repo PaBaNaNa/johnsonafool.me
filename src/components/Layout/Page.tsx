@@ -22,7 +22,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(
             rel="canonical"
           />
 
-          {/* <link href="/favicon.ico" rel="icon" sizes="any" /> */}
+          <link href="/favicon.ico" rel="icon" sizes="any" />
           <link href="/icon.svg" rel="icon" type="image/svg+xml" />
           <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
           <link href="/site.webmanifest" rel="manifest" />
