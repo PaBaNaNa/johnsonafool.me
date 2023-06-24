@@ -104,7 +104,7 @@ const MobileNav: FC<{
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-stone-900 bg-opacity-75" />
+            <Dialog.Overlay className="fixed inset-0 bg-neutral-950 bg-opacity-75" />
           </Transition.Child>
           <Transition.Child
             as={Fragment}
@@ -115,7 +115,7 @@ const MobileNav: FC<{
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
           >
-            <div className="relative w-4/5 bg-stone-800">
+            <div className="relative w-4/5 bg-neutral-900">
               <nav className="mt-5 flex flex-col gap-y-2 px-2">
                 {navSections.map((section) => (
                   <NavItem

@@ -15,9 +15,9 @@ import StackOverflowIcon from "../components/Icon/StackOverflowIcon";
 import TwitterIcon from "../components/Icon/TwitterIcon";
 import aiTestimonialImage from "../images/generativeai.png";
 import aiImageOne from "../images/generativeai-1.png";
+import aiImageTwo from "../images/generativeai-2.png";
 import heroImage from "../images/header-background.webp";
 import heroImageMediaLab from "../images/media-lab.webp";
-import porfolioImageCoralTrack from "../images/portfolio/coral-track.jpg";
 import porfolioImageNpcSite from "../images/portfolio/npc-site.jpg";
 import porfolioImageOpenhci from "../images/portfolio/openhci.jpg";
 import porfolioImagePblCar from "../images/portfolio/pbl-car.jpg";
@@ -33,6 +33,9 @@ import porfolioImage8 from "../images/portfolio/portfolio-8.jpg";
 import porfolioImage9 from "../images/portfolio/portfolio-9.jpg";
 import porfolioImage10 from "../images/portfolio/portfolio-10.jpg";
 import porfolioImage11 from "../images/portfolio/portfolio-11.jpg";
+import porfolioImageCoralTrack from "../images/portfolio/portfolio-coral-track.jpg";
+import porfolioImageOpenHCI from "../images/portfolio/portfolio-openhci.jpg";
+import porfolioImageTaipeiGisWeb from "../images/portfolio/portfolio-taipei-gis-web.jpg";
 import porfolioImageTaipeiBasinSite from "../images/portfolio/taipei-basin-site.jpg";
 import porfolioImageTaipeiBlueprint from "../images/portfolio/taipei-blueprint.jpg";
 // import profilepic from "../images/profilepic.jpg";
@@ -85,7 +88,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Hello, I am Johnson Tseng (曾紘遠) a college student from Taipei. I am
+        I am Johnson Tseng (曾紘遠), a college student from Taipei. I am
         interesting in{" "}
         <strong className="text-stone-100">Full Stack Development</strong>, and
         currently working at{" "}
@@ -97,13 +100,11 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I often use <strong className="text-stone-100">johnsonafool</strong> as
-        my user name or ID, which was inspired by the quote of Steve Jobs{" "}
-        <strong className="text-stone-100">Stay hungry. Stay foolish.</strong> I
-        have adopted the nickname as a reminder of the power of staying curious,
-        thinking differently, and maintaining a childlike sense of wonder. Just
-        as Steve Jobs emphasized the importance of remaining foolish, I strive
-        to approach each opportunity with an open mind, ready to explore new
-        perspectives and push the boundaries of what is possible.
+        my account user name or ID, which was inspired by the quote of Steve
+        Jobs{" "}
+        <strong className="text-stone-100">Stay hungry. Stay foolish.</strong>
+        Remind myself stay curious, thinking differently, and maintaining a
+        childlike sense of wonder.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my leisure, you can catch me embark upon{" "}
@@ -122,12 +123,6 @@ export const heroData: Hero = {
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
-    // {
-    //   href: "/assets/_resume.pdf",
-    //   text: "Portfolio",
-    //   primary: true,
-    //   Icon: ArrowDownTrayIcon,
-    // },
     {
       href: `mailto:johnsonafool@gmail.com`,
       text: "Contact",
@@ -145,9 +140,11 @@ export const aboutData: About = {
   My previous programming experience including  C, C#, Python, TypeScript, SQL, Git, Docker, React.js, GraphQL, 
   Tensorflow, FastAPI, Unity`,
   aboutItems: [
-    { label: "Location", text: "Taipei, Taiwan", Icon: MapIcon },
+    {
+      label: "Personality",
+      text: "ESFJ-A",
+    },
     { label: "Age", text: "21", Icon: CalendarIcon },
-    // { label: "Nationality", text: "Taiwanese", Icon: FlagIcon },
     {
       label: "Interests",
       text: "Startups, Outdoor Activities, Cooking, Fitness, Reading",
@@ -163,6 +160,7 @@ export const aboutData: About = {
       text: "City Science, MIT Media Lab",
       Icon: BuildingOffice2Icon,
     },
+    { label: "Location", text: "Taipei, Taiwan", Icon: MapIcon },
   ],
 };
 
@@ -248,20 +246,20 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Self Driving Car",
     description: "Win a International Project Based Learning Competition",
     url: "https://timbaker.me",
-    image: porfolioImagePblCar,
+    image: porfolioImageCoralTrack,
   },
   {
     title: "OpenHCI 2022 Project",
     description:
       "Campus Chicken Crisis: Betting Half of the Future. Gaining Best Technical Achievement Award",
     url: "https://timbaker.me",
-    image: porfolioImageOpenhci,
+    image: porfolioImageOpenHCI,
   },
   {
     title: "Project title 3",
     description: "Give a short description of your project here.",
     url: "https://timbaker.me",
-    image: porfolioImage3,
+    image: porfolioImageTaipeiGisWeb,
   },
   {
     title: "Project title 4",
@@ -274,7 +272,7 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       "Introduce our club using scroll animation. Built with Vue.js and Vite",
     url: "https://ntut-club-animation.vercel.app",
-    image: porfolioImageNpcSite,
+    image: porfolioImage5,
   },
   {
     title: "Project title 6",
@@ -286,7 +284,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Taipei Blueprint",
     description: "Give a short description of your project here.",
     url: "taipei-blueprint.vercel.app",
-    image: porfolioImageTaipeiBlueprint,
+    image: porfolioImage7,
   },
   {
     title: "Project title 8",
@@ -298,7 +296,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "CSL x TUIC Smart Taipei",
     description: "Give a short description of your project here.",
     url: "https://taipei-basin-dashboard.vercel.app/",
-    image: porfolioImageTaipeiBasinSite,
+    image: porfolioImage9,
   },
   {
     title: "Project title 10",
@@ -310,7 +308,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Object Detection and Tracking in Edge Device",
     description: "Using Tensorflow Lite and OpenCV to detect and track object",
     url: "https://timbaker.me",
-    image: porfolioImageCoralTrack,
+    image: porfolioImage11,
   },
 ];
 
@@ -344,17 +342,6 @@ export const education: TimelineItem[] = [
       </div>
     ),
   },
-  // {
-  //   date: "March 2003",
-  //   location: "School of Business",
-  //   title: "What did you study 101",
-  //   content: (
-  //     <p>
-  //       Describe your experience at school, what you learned, what useful skills
-  //       you have acquired etc.
-  //     </p>
-  //   ),
-  // },
 ];
 
 export const experience: TimelineItem[] = [
@@ -395,26 +382,20 @@ export const experience: TimelineItem[] = [
     content: (
       <div className="flex flex-col gap-4">
         <p>
-          As the President of the School Programming Club, I developed and
-          conducted programming workshops and courses, teaching fundamental
-          concepts and practical skills to students of all levels in plain
-          words, through hands-on coding exercises and collaborative projects.
-          Aside for programming, I also organized few social events and
-          activities to promote the club and attract new members.
+          Open HCI, is a prestigious event in the field of Human-Computer
+          Interaction (HCI) in Taiwan. As a Technical Teaching Assistant, I
+          provide guidance and support relating to technical aspect to the group
+          participants, ensuring their understanding and proficiency in
+          utilizing advanced technologies such as Unity, Arduino, and web
+          development.
         </p>
         <p>
-          In addition to teaching, I actively contributed to various club owned
-          projects, I collaborated with core club members on software
-          development initiatives, ranging from mobile applications (TAT) to
-          web-based systems (Club Official Site) and social app chatbot service
-          (Discord, Line). One of my significant accomplishments was serving as
-          a project manager for the school course app, TAT. Recognizing the need
-          for efficient project management, I implemented agile development
-          methodologies learned from CityScope Experience, enabling our team to
-          adapt to changing requirements and deliver high-quality results in a
-          timely manner. By effectively coordinating the efforts of team members
-          and fostering effective communication, we were able to deliver a
-          feature-rich beta version of the app.
+          Throughout the project, I emphasized the importance of user-centered
+          design and usability testing. I guided the participants in conducting
+          user research and incorporating user feedback into the iterative
+          design process. By incorporating human factors and usability
+          principles, we ensured that the final project provided a seamless and
+          intuitive experience for users.
         </p>
         <p>
           Skills: Leadership, Team Management, Project Management, Agile
@@ -424,15 +405,97 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: "March 2007 - February 2010",
-    location: "Garage Startup Studio",
-    title: "Junior bug fixer",
+    date: "March 2022 - August 2022",
+    location: "Open HCI",
+    title: "Open HCI 2022 Technical Teaching Assistant",
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies
-        you have been working with, and anything else that would be useful for
-        an employer to know.
-      </p>
+      <div className="flex flex-col gap-4">
+        <p>
+          As the President of the School Programming Club, I developed and
+          conducted programming workshops and courses, teaching fundamental
+          concepts and practical skills to students of all levels in plain
+          words, through hands-on coding exercises and collaborative projects.
+          Aside for programming, I also organized few social events and
+          activities to promote the club and attract new members.
+        </p>
+        <p>
+          Throughout the project, I emphasized the importance of user-centered
+          design and usability testing, I guided the participants in conducting
+          user research and incorporating user feedback into the iterative
+          design process as well. By incorporating human factors and usability
+          principles, we ensured that the final project provided a seamless and
+          intuitive experience for users.
+        </p>
+        <p>
+          Skills: Leadership, Team Management, Project Management, Design
+          Thinking, Unity, Arduino
+        </p>
+      </div>
+    ),
+  },
+];
+
+export const skill: TimelineItem[] = [
+  {
+    date: "",
+    location: "Mandarin, English, Japanese",
+    title: "Language",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>""""</p>
+      </div>
+    ),
+  },
+  {
+    date: "",
+    location:
+      "FastAPI, Django, Node.js, Express.js, Fastify, Colyseus, Socket Programming, Web Sockets, RESTful, GraphQL",
+    title: "Backend Development",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>""""</p>
+      </div>
+    ),
+  },
+  {
+    date: "",
+    location:
+      "React.js, Next.js, Redux-Saga, Zustand, React Query, TailwindCSS, Styled Components, Babylon.js, Three.js",
+    title: "Frontend Development",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>""""""</p>
+      </div>
+    ),
+  },
+  {
+    date: "",
+    location: "Postgres, MySQL, MongoDB, Redis, Neo4j, Prisma",
+    title: "Database Design & Management",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>""""</p>
+      </div>
+    ),
+  },
+  {
+    date: "",
+    location: "Tensorflow, Scikit-Learn, Airflow, Kafka, Spark, Hadoop, Pandas",
+    title: "Data Engineering & Data Science",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>""""</p>
+      </div>
+    ),
+  },
+  {
+    date: "",
+    location: "Linux (Ubuntu), GCP, Git Flow, Docker, Nginx, Terraform",
+    title: "DevOps",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>""""</p>
+      </div>
     ),
   },
 ];
@@ -442,28 +505,27 @@ export const experience: TimelineItem[] = [
  */
 export const testimonial: TestimonialSection = {
   imageSrc: aiTestimonialImage,
-  imageSrcCollection: [aiTestimonialImage, aiImageOne, aiTestimonialImage],
+  // TODO: change aiImageTwo to real generate image
+  imageSrcCollection: [aiTestimonialImage, aiImageOne, aiImageTwo],
   testimonials: [
     {
-      name: "John Doe",
+      name: "",
       text: `A photograph of a busy street in a downtown area, 
       with buildings and traffic in the background, 
       during the golden hour with warm, orange lighting, 
       and shot with a tilt-shift lens using a 24mm lens. (臺北市敦化南路一段)`,
-      image:
-        "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg",
+      image: "",
     },
     {
-      name: "Jane Doe",
+      name: "",
       text: `A sketch of a modern building street view captured at dusk with 
       a warm orange light, showcasing the busy street with pedestrians 
       and vehicles passing by, in the bustling city of Tokyo, 
       Japan. (忠孝復興 SOGO)`,
-      image:
-        "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg",
+      image: "",
     },
     {
-      name: "Someone else",
+      name: "",
       text: `A photograph of an intersection on a street, 
       showcasing the revitalization efforts taken by the city. 
       The photo should include newly planted trees and modern 
@@ -472,8 +534,7 @@ export const testimonial: TestimonialSection = {
       transportation infrastructure. during the golden hour with warm, 
       orange lighting, and shot with a tilt-shift lens 
       using a 24mm lens. (民權東路二段)`,
-      image:
-        "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg",
+      image: "",
     },
   ],
 };
@@ -497,11 +558,6 @@ export const contact: ContactSection = {
       text: "Taipei, Taiwan",
       href: "https://www.google.ca/maps/place/%E5%8F%B0%E5%8C%97%E5%B8%82/@25.0854061,121.5615012,11z",
     },
-    // {
-    //   type: ContactType.Instagram,
-    //   text: "@tbakerx",
-    //   href: "https://www.instagram.com/tbakerx/",
-    // },
     {
       type: ContactType.Github,
       text: "johnsonafool",

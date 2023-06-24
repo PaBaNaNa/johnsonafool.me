@@ -1,6 +1,6 @@
 import { FC, memo } from "react";
 
-import { education, experience, SectionId, skills } from "../../../data/data";
+import { education, experience, SectionId, skill } from "../../../data/data";
 import Section from "../../Layout/Section";
 import ResumeSection from "./ResumeSection";
 import { SkillGroup } from "./Skills";
@@ -20,7 +20,12 @@ const Resume: FC = memo(() => {
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
-        <ResumeSection title="Skills">
+        <ResumeSection title="Skill">
+          {skill.map((item, index) => (
+            <TimelineItem item={item} key={`${item.title}-${index}`} />
+          ))}
+        </ResumeSection>
+        {/* <ResumeSection title="Skills">
           <p className="pb-8">
             Here you can show a snapshot of your skills to show off to employers
           </p>
@@ -32,7 +37,7 @@ const Resume: FC = memo(() => {
               />
             ))}
           </div>
-        </ResumeSection>
+        </ResumeSection> */}
       </div>
     </Section>
   );
