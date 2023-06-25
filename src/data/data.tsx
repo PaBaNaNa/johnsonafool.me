@@ -35,9 +35,13 @@ import porfolioImage8 from "../images/portfolio/portfolio-8.jpg";
 import porfolioImage9 from "../images/portfolio/portfolio-9.jpg";
 import porfolioImage10 from "../images/portfolio/portfolio-10.jpg";
 import porfolioImage11 from "../images/portfolio/portfolio-11.jpg";
+import porfolioImageBlueprint from "../images/portfolio/portfolio-blueprint.jpg";
 import porfolioImageCoralTrack from "../images/portfolio/portfolio-coral-track.jpg";
+import porfolioImageKharkiv from "../images/portfolio/portfolio-kharkiv.jpg";
 import porfolioImageOpenHCI from "../images/portfolio/portfolio-openhci.jpg";
+import porfolioImagePbl from "../images/portfolio/portfolio-pbl.jpg";
 import porfolioImageTaipeiGisWeb from "../images/portfolio/portfolio-taipei-gis-web.jpg";
+import porfolioImageTat from "../images/portfolio/portfolio-tat.jpg";
 import porfolioImageTaipeiBasinSite from "../images/portfolio/taipei-basin-site.jpg";
 import porfolioImageTaipeiBlueprint from "../images/portfolio/taipei-blueprint.jpg";
 // import profilepic from "../images/profilepic.jpg";
@@ -274,26 +278,26 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Project title 4",
     description: "Give a short description of your project here.",
     url: "https://timbaker.me",
-    image: porfolioImage4,
+    image: porfolioImageTat,
   },
   {
     title: "NTUT Programming Club Animated Introduction",
     description:
       "Introduce our club using scroll animation. Built with Vue.js and Vite",
     url: "https://ntut-club-animation.vercel.app",
-    image: porfolioImage5,
+    image: porfolioImagePbl,
   },
   {
     title: "Project title 6",
     description: "Give a short description of your project here.",
     url: "https://timbaker.me",
-    image: porfolioImage6,
+    image: porfolioImageKharkiv,
   },
   {
     title: "Taipei Blueprint",
     description: "Give a short description of your project here.",
     url: "taipei-blueprint.vercel.app",
-    image: porfolioImage7,
+    image: porfolioImageBlueprint,
   },
   {
     title: "Project title 8",
