@@ -7,6 +7,8 @@ import {
   MapIcon,
   SparklesIcon,
 } from "@heroicons/react/24/outline";
+import { title } from "process";
+import { text } from "stream/consumers";
 
 import GithubIcon from "../components/Icon/GithubIcon";
 import InstagramIcon from "../components/Icon/InstagramIcon";
@@ -88,36 +90,37 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am Johnson Tseng (曾紘遠), a college student from Taipei. I am
+        I am Johnson Tseng (曾紘遠), a college student from Taipei. I am now
         interesting in{" "}
-        <strong className="text-stone-100">Full Stack Development</strong>, and
+        <strong className="text-stone-100">Full Stack Development</strong>,
         currently working at{" "}
         <strong className="text-stone-100">
           City Science Taipei, MIT Media Lab
         </strong>{" "}
-        transforming cities through aiming at making urban city better, by doing
-        research and survey.
+        {/* transforming cities through aiming at making urban city better, by doing
+        research and survey. */}
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I often use <strong className="text-stone-100">johnsonafool</strong> as
-        my account user name or ID, which was inspired by the quote of Steve
-        Jobs{" "}
+        my account user name or ID, inspired by the quote of Steve Jobs{" "}
         <strong className="text-stone-100">Stay hungry. Stay foolish.</strong>
-        Remind myself stay curious, thinking differently, and maintaining a
+        Remind me stay curious, thinking differently, and maintaining a
         childlike sense of wonder.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my leisure, you can catch me embark upon{" "}
         <strong className="text-stone-100">Outdoor Activities</strong>,
         immersing on{" "}
-        <strong className="text-stone-100">Postmodernist Literature</strong>, or
+        <strong className="text-stone-100">Postmodernist Literature</strong>.
+        {/* , or
         engaging in{" "}
-        <strong className="text-stone-100">Volunteering Actives</strong>.
+        <strong className="text-stone-100">Volunteering Actives</strong>. */}
       </p>
     </>
   ),
   actions: [
     {
+      // TODO: add update resume
       href: "/assets/resume.pdf",
       text: "Resume",
       primary: true,
@@ -136,30 +139,36 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepicBlackWhite,
-  description: `I am a senior year student currently working in MIT Media Lab Lab @ Taipei, 
-  My previous programming experience including  C, C#, Python, TypeScript, SQL, Git, Docker, React.js, GraphQL, 
-  Tensorflow, FastAPI, Unity`,
+  // description: `I am a senior year student currently working in MIT Media Lab Lab @ Taipei,
+  // My previous programming experience including  C, C#, Python, TypeScript, SQL, Git, Docker, React.js, GraphQL,
+  // Tensorflow, FastAPI, Unity`,
+  description: `I'm currently pursuing my degree and gaining valuable 
+  hands-on experience at City Science Lab. As an eager 
+  problem solver, I approach challenges by analyzing problem patterns 
+  and employing programming techniques to find effective solutions. 
+  My work primarily focuses on leveraging technology to enhance modern 
+  urban environments, where I conduct surveys, perform research.`,
   aboutItems: [
-    {
-      label: "Personality",
-      text: "ESFJ-A",
-    },
-    { label: "Age", text: "21", Icon: CalendarIcon },
-    {
-      label: "Interests",
-      text: "Startups, Outdoor Activities, Cooking, Fitness, Reading",
-      Icon: SparklesIcon,
-    },
     {
       label: "Study",
       text: "National Taipei University of Technology",
       Icon: AcademicCapIcon,
     },
     {
-      label: "Employment",
-      text: "City Science, MIT Media Lab",
+      label: "Work",
+      text: "City Science Lab (CSL) @ Taipei",
       Icon: BuildingOffice2Icon,
     },
+    {
+      label: "Interests",
+      text: "Startups, Outdoor Activities, Cooking, Fitness, Reading, Traveling, Volunteering",
+      Icon: SparklesIcon,
+    },
+    {
+      label: "Personality",
+      text: "ESFJ-A",
+    },
+    { label: "Age", text: "21", Icon: CalendarIcon },
     { label: "Location", text: "Taipei, Taiwan", Icon: MapIcon },
   ],
 };
@@ -326,18 +335,22 @@ export const education: TimelineItem[] = [
         <p>
           During my time at university, I have acquired a versatile skill set
           that includes understanding in programming languages such as
-          TypeScript, Python, and C++ . Collaborating with peers, as well as
-          hands-on experience with various development frameworks and tools. I
-          am adept at software development, data analysis, and problem-solving,
-          and I have taken course including databases, algorithms, and computer
-          networks etc.
+          TypeScript, Python, and C++ and C#. Collaborating with peers, as well
+          as hands-on experience.
         </p>
         <p>
-          In addition, my involvement includes join few labs, active
-          participation in the several clubs, and engagement in various
-          extracurricular activities and competitions, which not only broadened
-          my skill set, but also strengthened my ability to collaborate,
-          communicate effectively, and thrive in diverse environments.
+          In school, I enrolled few courses, such as Algorithm, Digital Signal
+          Processing, Image Processing and Compression, Machine Learning,
+          Database Design, Web Development, Computer Network, Operating System,
+          help to build a solid foundation in computer science and utilize the
+          knowledge by doing projects.
+        </p>
+        <p>
+          My involvement also includes active participation in the several
+          clubs, and engagement in various extracurricular activities and
+          competitions, which broadened my skill set, and strengthened my
+          ability to collaborate, communicate effectively, and thrive in diverse
+          environments.
         </p>
       </div>
     ),
@@ -347,16 +360,17 @@ export const education: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: "March 2022 - Present",
-    location: "MIT Media Lab",
+    location: "City Science Taipei, MIT Media Lab",
     title: "Undergraduate Research Opportunity Program",
     content: (
       <div className="flex flex-col gap-4">
         <p>
-          Working with a insightful project, CityScope, dedicating to leveraging
-          data to solve complex problems in modern cities. The CityScope project
-          aimed to analyze vast amounts of urban data, ranging from
-          transportation patterns to energy consumption, in order to gain
-          insights into city dynamics and develop innovative solutions.
+          Working with a insightful project in City Science, CityScope,
+          dedicating to leveraging data to solve complex problems in modern
+          cities. The CityScope project aimed to analyze vast amounts of urban
+          data, ranging from transportation patterns to energy consumption, in
+          order to gain insights into city dynamics and develop innovative
+          solutions.
         </p>
         <p>
           My work include data analysis, data engineering, machine learning,
@@ -382,20 +396,29 @@ export const experience: TimelineItem[] = [
     content: (
       <div className="flex flex-col gap-4">
         <p>
-          Open HCI, is a prestigious event in the field of Human-Computer
-          Interaction (HCI) in Taiwan. As a Technical Teaching Assistant, I
-          provide guidance and support relating to technical aspect to the group
-          participants, ensuring their understanding and proficiency in
-          utilizing advanced technologies such as Unity, Arduino, and web
-          development.
+          As the President of NTUT Programming Club (a.k.a NPC), I conducted
+          several events (workshop, club gathering, tech talk etc.) and
+          programming courses. In teaching, I like to start with fundamental
+          concepts in plain words and follow by apply skills in the group
+          project, through project based learning, fellows learn how to use what
+          they learned in real case, and consolidate the knowledge by debugging
+          and develop required features. Aside for programming stuff, I also
+          organized few social events and activities to promote the club and
+          attract new members.
         </p>
         <p>
-          Throughout the project, I emphasized the importance of user-centered
-          design and usability testing. I guided the participants in conducting
-          user research and incorporating user feedback into the iterative
-          design process. By incorporating human factors and usability
-          principles, we ensured that the final project provided a seamless and
-          intuitive experience for users.
+          Besides, I actively contributed to various club owned projects, I
+          collaborated with core club members on software development
+          initiatives, ranging from mobile applications (Campus Course App, TAT)
+          to web-based systems (Club Official Site) and social app chatbot
+          service (Discord Bot, Line Bot). One of my significant accomplishments
+          was serving as a project manager for TAT. Recognizing the need for
+          efficient project management, I implemented agile development
+          methodologies, enabling our team to adapt to changing requirements and
+          deliver high-quality results in a timely manner. By effectively
+          coordinating the efforts of team members and fostering effective
+          communication, we were able to deliver a feature-rich beta version of
+          the app.
         </p>
         <p>
           Skills: Leadership, Team Management, Project Management, Agile
@@ -411,24 +434,29 @@ export const experience: TimelineItem[] = [
     content: (
       <div className="flex flex-col gap-4">
         <p>
-          As the President of the School Programming Club, I developed and
-          conducted programming workshops and courses, teaching fundamental
-          concepts and practical skills to students of all levels in plain
-          words, through hands-on coding exercises and collaborative projects.
-          Aside for programming, I also organized few social events and
-          activities to promote the club and attract new members.
+          Open HCI (OpenHCI 人機互動工作坊) is a prestigious workshop in the
+          field of Human-Computer Interaction in Taiwan. As a Technical Teaching
+          Assistant Department, I collaborate with other TAs in organizing the
+          events regarding to technical sides, such as P5.js Arduino, Computer
+          Vision. Try to making these differentiate from typical school course
+          by leading with real case implementation. During the workshop, TAs
+          were assigned with few fellows to cooperate making project, I provide
+          guidance and support relating to technical aspect to the group
+          participants, ensuring their understanding and able to further
+          utilizing with their ideas on HCI.
         </p>
         <p>
-          Throughout the project, I emphasized the importance of user-centered
-          design and usability testing, I guided the participants in conducting
-          user research and incorporating user feedback into the iterative
-          design process as well. By incorporating human factors and usability
-          principles, we ensured that the final project provided a seamless and
-          intuitive experience for users.
+          Throughout the workshop progress, I emphasized the importance of
+          user-centered design and usability testing that I learned from Media
+          Lab. Guiding the participants in conducting user research and
+          incorporating user feedback into the iterative design process. By
+          incorporating human factors and usability principles, we ensured that
+          the final project provided a seamless and intuitive experience for
+          users.
         </p>
         <p>
           Skills: Leadership, Team Management, Project Management, Design
-          Thinking, Unity, Arduino
+          Thinking
         </p>
       </div>
     ),
@@ -442,29 +470,74 @@ export const skill: TimelineItem[] = [
     title: "Language",
     content: (
       <div className="flex flex-col gap-4">
-        <p>""""</p>
+        {/* <p>
+          English: TOEIC: 925, TOEFL: 91, International volunteer, English
+          tutor, School international affair department volunteering
+        </p> */}
       </div>
     ),
   },
   {
     date: "",
-    location:
-      "FastAPI, Django, Node.js, Express.js, Fastify, Colyseus, Socket Programming, Web Sockets, RESTful, GraphQL",
+    location: `FastAPI, Django, Node.js, Express.js, Fastify, Colyseus, 
+      Socket Programming, Web Sockets, RESTful, GraphQL`,
     title: "Backend Development",
     content: (
       <div className="flex flex-col gap-4">
-        <p>""""</p>
+        <p>
+          For me backend development is like a vivid book about what I learned
+          from courses. In networking, I have to consider IP addressing, TCP/IP,
+          UDP, DNS, and HTTP, according to need.
+        </p>
+        <p>
+          It also have strong connection with operating systems, like async,
+          process management, threading, memory management, file systems, and
+          interprocess communication. To make the server scalable, they are all
+          important.
+        </p>
+        <p>
+          Some of my friends like to joke around backend is really easy, since
+          stuff we done on course only about CRUD, and my experience in CSL give
+          me chance to design real system and consider more beyond that.
+        </p>
+        <p>
+          Recently I have extend my backend knowledge to learn MLOps and DevOps,
+          as working on deploy model on API and collect data continuously with
+          distributed task scheduler such Airflow.
+        </p>
       </div>
     ),
   },
   {
     date: "",
-    location:
-      "React.js, Next.js, Redux-Saga, Zustand, React Query, TailwindCSS, Styled Components, Babylon.js, Three.js",
+    location: `React.js, Next.js, Redux-Saga, Zustand, React Query, 
+    TailwindCSS, Styled Components`,
+    // , Babylon.js, Three.js, WebGL, WebGPU
     title: "Frontend Development",
     content: (
       <div className="flex flex-col gap-4">
-        <p>""""""</p>
+        <p>
+          I enjoy frontend a lot, in past I develop in React.js since the team I
+          work with it. But recently I start to go with Next.js, since it
+          provide more flexibility and better performance and SSR gradually
+          become the go to standard in web development.
+        </p>
+        <p>
+          In state management, I usually use Redux-Saga and it is very handful
+          for dealing with side effects.
+        </p>
+        <p>
+          In styling, I usually work with styled component, usually I got layout
+          from Figma, and implement it with styled component. I also use
+          TailwindCSS these days, when I am doing my own project or prototype
+          that no design layout is provided. I found it super convenient and
+          easy to use.
+        </p>
+        <p>
+          In CityScope project, there are many visualizations relating to urban,
+          We usually doing the stack with React.js, Redux-Saga, DeckGL, and
+          Mapbox to integrate with backend and database.
+        </p>
       </div>
     ),
   },
@@ -490,8 +563,19 @@ export const skill: TimelineItem[] = [
   },
   {
     date: "",
-    location: "Linux (Ubuntu), GCP, Git Flow, Docker, Nginx, Terraform",
+    location:
+      "Linux (Ubuntu), GCP, Git Flow, Github CI / CD, Docker, Nginx, Terraform",
     title: "DevOps",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>""""</p>
+      </div>
+    ),
+  },
+  {
+    date: "",
+    location: "Babylon.js, Three.js, Unity",
+    title: "ThreeD Modeling & Rendering",
     content: (
       <div className="flex flex-col gap-4">
         <p>""""</p>
