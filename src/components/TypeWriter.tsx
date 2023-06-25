@@ -7,10 +7,7 @@ const TypeWriter: FC = memo(() => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [
-        "hello -> world();",
-        // , "&amp; world();"
-      ],
+      strings: ["hello -> world();"],
       typeSpeed: 70,
     });
 
@@ -21,7 +18,7 @@ const TypeWriter: FC = memo(() => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="font-mono">
       <span ref={el} />
     </div>
   );
