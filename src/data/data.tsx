@@ -107,7 +107,7 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I often use <strong className="text-stone-100">johnsonafool</strong> as
         my account user name or ID, inspired by the quote of Steve Jobs{" "}
-        <strong className="text-stone-100">Stay hungry. Stay foolish.</strong>
+        <strong className="text-stone-100">Stay hungry. Stay foolish. </strong>
         Remind me stay curious, thinking differently, and maintaining a
         childlike sense of wonder.
       </p>
@@ -146,12 +146,10 @@ export const aboutData: About = {
   // description: `I am a senior year student currently working in MIT Media Lab Lab @ Taipei,
   // My previous programming experience including  C, C#, Python, TypeScript, SQL, Git, Docker, React.js, GraphQL,
   // Tensorflow, FastAPI, Unity`,
-  description: `I'm currently pursuing my degree and gaining valuable 
-  hands-on experience at City Science Lab. As an eager 
-  problem solver, I approach challenges by analyzing problem patterns 
-  and employing programming techniques to find effective solutions. 
-  My work primarily focuses on leveraging technology to enhance modern 
-  urban environments, where I conduct surveys, perform research.`,
+  description: `I'm a senior student and now work at City Science Lab (CSL) as well. 
+  In CSL, My work primarily focuses on using technology to enhance the communication 
+  modern between urban environments and engineering, where I conduct surveys, 
+  perform research.`,
   aboutItems: [
     {
       label: "Study",
@@ -165,7 +163,7 @@ export const aboutData: About = {
     },
     {
       label: "Interests",
-      text: "Startups, Outdoor Activities, Cooking, Fitness, Reading, Traveling, Volunteering",
+      text: "Startups, Cooking, Fitness, Reading, Traveling, Volunteering",
       Icon: SparklesIcon,
     },
     {
@@ -337,21 +335,21 @@ export const education: TimelineItem[] = [
     content: (
       <div className="flex flex-col gap-4">
         <p>
-          During my time at university, I have acquired a versatile skill set
-          that includes understanding in programming languages such as
-          TypeScript, Python, and C++ and C#. Collaborating with peers, as well
-          as hands-on experience.
+          During my time at university, I have acquired a several skill includes
+          understanding in programming languages like TypeScript, Python, and
+          C++ and C#. By making course homework or collaborating with peers in
+          projects.
         </p>
         <p>
-          In school, I enrolled few courses, such as Algorithm, Digital Signal
+          In school, I enrolled some courses, like Algorithm, Digital Signal
           Processing, Image Processing and Compression, Machine Learning,
           Database Design, Web Development, Computer Network, Operating System,
-          help to build a solid foundation in computer science and utilize the
-          knowledge by doing projects.
+          help me to build a solid foundation in computer science and utilize
+          the knowledge when I am programming.
         </p>
         <p>
           My involvement also includes active participation in the several
-          clubs, and engagement in various extracurricular activities and
+          clubs, engagement in various extracurricular activities and
           competitions, which broadened my skill set, and strengthened my
           ability to collaborate, communicate effectively, and thrive in diverse
           environments.
@@ -403,26 +401,29 @@ export const experience: TimelineItem[] = [
           As the President of NTUT Programming Club (a.k.a NPC), I conducted
           several events (workshop, club gathering, tech talk etc.) and
           programming courses. In teaching, I like to start with fundamental
-          concepts in plain words and follow by apply skills in the group
-          project, through project based learning, fellows learn how to use what
-          they learned in real case, and consolidate the knowledge by debugging
-          and develop required features. Aside for programming stuff, I also
-          organized few social events and activities to promote the club and
-          attract new members.
+          concepts in plain words then apply skills in group project, through
+          project based learning, fellows learn how to use what they learned in
+          real case, and consolidate the knowledge by debugging and develop
+          required features. Aside for programming stuff, I also organized few
+          social events and activities to promote the club and attract new
+          members.
         </p>
         <p>
           Besides, I actively contributed to various club owned projects, I
           collaborated with core club members on software development
           initiatives, ranging from mobile applications (Campus Course App, TAT)
           to web-based systems (Club Official Site) and social app chatbot
-          service (Discord Bot, Line Bot). One of my significant accomplishments
-          was serving as a project manager for TAT. Recognizing the need for
-          efficient project management, I implemented agile development
-          methodologies, enabling our team to adapt to changing requirements and
-          deliver high-quality results in a timely manner. By effectively
-          coordinating the efforts of team members and fostering effective
-          communication, we were able to deliver a feature-rich beta version of
-          the app.
+          service (Discord Bot, Line Bot).
+        </p>
+        <p>
+          One of my significant accomplishments was serving as lead for TAT,
+          which is an App developed and maintained by programming club.
+          Recognizing the need for efficient project management and arrangement,
+          I implemented agile development methodologies, enabling our team to
+          adapt to changing requirements and deliver high-quality results in a
+          timely manner. By effectively coordinating the efforts of team members
+          and fostering effective communication, we were able to deliver a
+          feature-rich beta version of the app.
         </p>
         <p>
           Skills: Leadership, Team Management, Project Management, Agile
@@ -443,11 +444,13 @@ export const experience: TimelineItem[] = [
           Assistant Department, I collaborate with other TAs in organizing the
           events regarding to technical sides, such as P5.js Arduino, Computer
           Vision. Try to making these differentiate from typical school course
-          by leading with real case implementation. During the workshop, TAs
-          were assigned with few fellows to cooperate making project, I provide
-          guidance and support relating to technical aspect to the group
-          participants, ensuring their understanding and able to further
-          utilizing with their ideas on HCI.
+          by leading with real case implementation.
+        </p>
+        <p>
+          During the workshop, TAs were assigned with few fellows to cooperate
+          making project, I provide guidance and support relating to technical
+          aspect to the group participants, ensuring their understanding and
+          able to further utilizing with their ideas on HCI.
         </p>
         <p>
           Throughout the workshop progress, I emphasized the importance of
@@ -494,10 +497,9 @@ export const skill: TimelineItem[] = [
           UDP, DNS, and HTTP, according to need.
         </p>
         <p>
-          It also have strong connection with operating systems, like async,
-          process management, threading, memory management, file systems, and
-          interprocess communication. To make the server scalable, they are all
-          important.
+          It has strong connection with operating systems, like async, process
+          management, threading, memory management, file systems, and . To make
+          the server scalable, they are all important.
         </p>
         <p>
           Some of my friends like to joke around backend is really easy, since
@@ -527,10 +529,6 @@ export const skill: TimelineItem[] = [
           become the go to standard in web development.
         </p>
         <p>
-          In state management, I usually use Redux-Saga and it is very handful
-          for dealing with side effects.
-        </p>
-        <p>
           In styling, I usually work with styled component, usually I got layout
           from Figma, and implement it with styled component. I also use
           TailwindCSS these days, when I am doing my own project or prototype
@@ -540,49 +538,55 @@ export const skill: TimelineItem[] = [
         <p>
           In CityScope project, there are many visualizations relating to urban,
           We usually doing the stack with React.js, Redux-Saga, DeckGL, and
-          Mapbox to integrate with backend and database.
+          Mapboxgl to integrate with backend and database.
         </p>
       </div>
     ),
   },
-  {
-    date: "",
-    location: "Postgres, MySQL, MongoDB, Redis, Neo4j, Prisma",
-    title: "Database Design & Management",
-    content: (
-      <div className="flex flex-col gap-4">
-        <p>""""</p>
-      </div>
-    ),
-  },
-  {
-    date: "",
-    location: "Tensorflow, Scikit-Learn, Airflow, Kafka, Spark, Hadoop, Pandas",
-    title: "Data Engineering & Data Science",
-    content: (
-      <div className="flex flex-col gap-4">
-        <p>""""</p>
-      </div>
-    ),
-  },
-  {
-    date: "",
-    location:
-      "Linux (Ubuntu), GCP, Git Flow, Github CI / CD, Docker, Nginx, Terraform",
-    title: "DevOps",
-    content: (
-      <div className="flex flex-col gap-4">
-        <p>""""</p>
-      </div>
-    ),
-  },
+  // {
+  //   date: "",
+  //   location: "Postgres, MySQL, MongoDB, Redis, Neo4j, Prisma",
+  //   title: "Database Design & Management",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //       <p></p>
+  //       <p></p>
+  //       <p></p>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   date: "",
+  //   location: "Tensorflow, Scikit-Learn, Airflow, Kafka, Spark, Hadoop, Pandas",
+  //   title: "Data Engineering & Data Science",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //       <p>""""</p>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   date: "",
+  //   location:
+  //     "Linux (Ubuntu), GCP, Git Flow, Github CI / CD, Docker, Nginx, Terraform",
+  //   title: "DevOps",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //       <p>""""</p>
+  //     </div>
+  //   ),
+  // },
   {
     date: "",
     location: "Babylon.js, Three.js, Unity",
-    title: "ThreeD Modeling & Rendering",
+    title: "Three Dimension Modeling & Rendering",
     content: (
       <div className="flex flex-col gap-4">
-        <p>""""</p>
+        <p>
+          I also try 3D rendering before, and there are some difference between
+          WebGL and Unity Engine, I more prefer to use Three.js for the the
+          convenience of integrating with React.js.
+        </p>
       </div>
     ),
   },
@@ -614,14 +618,11 @@ export const testimonial: TestimonialSection = {
     },
     {
       name: "",
-      text: `A photograph of an intersection on a street, 
-      showcasing the revitalization efforts taken by the city. 
-      The photo should include newly planted trees and modern 
-      buildings replacing the old ones, and a bus route passing 
-      through the intersection, highlighting the improved public 
-      transportation infrastructure. during the golden hour with warm, 
-      orange lighting, and shot with a tilt-shift lens 
-      using a 24mm lens. (民權東路二段)`,
+      text: `A photograph of a bustling street in modern-night Japan. 
+      The vibrant cityscape stretches out before you, illuminated by a 
+      colorful array of neon lights. The air is filled with a mix of 
+      excitement and serenity as people go about their evening 
+      activities. (民權東路二段)`,
       image: "",
     },
   ],
