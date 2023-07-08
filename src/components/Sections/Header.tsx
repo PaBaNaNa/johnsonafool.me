@@ -38,8 +38,8 @@ const DesktopNav: FC<{
   currentSection: SectionId | null;
 }> = memo(({ navSections, currentSection }) => {
   const baseClass =
-    "-m-1.5 p-5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-600 sm:hover:text-sky-500 text-neutral-100";
-  const activeClass = classNames(baseClass, "text-pink-600");
+    "-m-1.5 p-5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 sm:hover:text-sky-500 text-neutral-100";
+  const activeClass = classNames(baseClass, "");
   const inactiveClass = classNames(baseClass, "text-neutral-100");
   return (
     <header

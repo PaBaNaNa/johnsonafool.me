@@ -3,51 +3,28 @@ import {
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
   MapIcon,
   SparklesIcon,
 } from "@heroicons/react/24/outline";
-import { title } from "process";
-import { text } from "stream/consumers";
 
 import GithubIcon from "../components/Icon/GithubIcon";
-import InstagramIcon from "../components/Icon/InstagramIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
 import StackOverflowIcon from "../components/Icon/StackOverflowIcon";
 import TwitterIcon from "../components/Icon/TwitterIcon";
 import aiTestimonialImage from "../images/generativeai.png";
 import aiImageOne from "../images/generativeai-1.png";
 import aiImageTwo from "../images/generativeai-2.png";
-import heroImage from "../images/header-background.webp";
 import heroImageMediaLab from "../images/media-lab.webp";
-import porfolioImageNpcSite from "../images/portfolio/npc-site.jpg";
-import porfolioImageOpenhci from "../images/portfolio/openhci.jpg";
-import porfolioImagePblCar from "../images/portfolio/pbl-car.jpg";
-// import heroImage from "../images/background.webp";
-import porfolioImage1 from "../images/portfolio/portfolio-1.jpg";
-import porfolioImage2 from "../images/portfolio/portfolio-2.jpg";
-import porfolioImage3 from "../images/portfolio/portfolio-3.jpg";
-import porfolioImage4 from "../images/portfolio/portfolio-4.jpg";
-import porfolioImage5 from "../images/portfolio/portfolio-5.jpg";
-import porfolioImage6 from "../images/portfolio/portfolio-6.jpg";
-import porfolioImage7 from "../images/portfolio/portfolio-7.jpg";
-import porfolioImage8 from "../images/portfolio/portfolio-8.jpg";
 import porfolioImage9 from "../images/portfolio/portfolio-9.jpg";
-import porfolioImage10 from "../images/portfolio/portfolio-10.jpg";
-import porfolioImage11 from "../images/portfolio/portfolio-11.jpg";
 import porfolioImageBlueprint from "../images/portfolio/portfolio-blueprint.jpg";
 import porfolioImageCoralTrack from "../images/portfolio/portfolio-coral-track.jpg";
+import porfolioImageGenerativeAi from "../images/portfolio/portfolio-generative-ai.jpg";
 import porfolioImageKharkiv from "../images/portfolio/portfolio-kharkiv.jpg";
+import porfolioImageMeetingRoom from "../images/portfolio/portfolio-meeting-room.jpg";
 import porfolioImageOpenHCI from "../images/portfolio/portfolio-openhci.jpg";
 import porfolioImagePbl from "../images/portfolio/portfolio-pbl.jpg";
 import porfolioImageTaipeiGisWeb from "../images/portfolio/portfolio-taipei-gis-web.jpg";
-import porfolioImageTat from "../images/portfolio/portfolio-tat.jpg";
-import porfolioImageTaipeiBasinSite from "../images/portfolio/taipei-basin-site.jpg";
-import porfolioImageTaipeiBlueprint from "../images/portfolio/taipei-blueprint.jpg";
-// import profilepic from "../images/profilepic.jpg";
-import profilepic from "../images/profile.jpg";
 import profilepicBlackWhite from "../images/profile-black-white.jpg";
-// import testimonialImage from "../images/testimonial.webp";
 import {
   About,
   ContactSection,
@@ -146,10 +123,10 @@ export const aboutData: About = {
   // description: `I am a senior year student currently working in MIT Media Lab Lab @ Taipei,
   // My previous programming experience including  C, C#, Python, TypeScript, SQL, Git, Docker, React.js, GraphQL,
   // Tensorflow, FastAPI, Unity`,
-  description: `I'm a senior student and now work at City Science Lab (CSL) as well. 
-  In CSL, My work primarily focuses on using technology to enhance the communication 
-  modern between urban environments and engineering, where I conduct surveys, 
-  perform research.`,
+  description: `As a senior student, I am currently working at City Science Lab (CSL) where my role revolves around 
+  leveraging technology to revolutionize the communication interface between urban environments and engineering. 
+  At CSL, I conduct comprehensive surveys, engage in extensive research, and spearhead initiatives aimed at enhancing 
+  the seamless integration of cutting-edge technologies in urban development`,
   aboutItems: [
     {
       label: "Study",
@@ -254,73 +231,104 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: "Self Driving Car",
-    description: "Win a International Project Based Learning Competition",
-    url: "https://timbaker.me",
-    image: porfolioImageCoralTrack,
-  },
-  {
-    title: "OpenHCI 2022 Project",
-    description:
-      "Campus Chicken Crisis: Betting Half of the Future. Gaining Best Technical Achievement Award",
-    url: "https://timbaker.me",
-    image: porfolioImageOpenHCI,
-  },
-  {
-    title: "Project title 3",
-    description: "Give a short description of your project here.",
-    url: "https://timbaker.me",
+    title: "CSL x TUIC Smart Taipei",
+    // description: "A Smart City Project with Taipei Urban Intelligence Center",
+    description: `Explore Taipei's urban intelligence through stunning 
+    visualizations. Collaborating for a smarter city experience. 
+    Discover the unseen stories of Taipei`,
+    // title: "Self Driving Car",
+    // description: "Win a International Project Based Learning Competition",
+    url: "",
     image: porfolioImageTaipeiGisWeb,
-  },
-  {
-    title: "Project title 4",
-    description: "Give a short description of your project here.",
-    url: "https://timbaker.me",
-    image: porfolioImageTat,
-  },
-  {
-    title: "NTUT Programming Club Animated Introduction",
-    description:
-      "Introduce our club using scroll animation. Built with Vue.js and Vite",
-    url: "https://ntut-club-animation.vercel.app",
-    image: porfolioImagePbl,
-  },
-  {
-    title: "Project title 6",
-    description: "Give a short description of your project here.",
-    url: "https://timbaker.me",
-    image: porfolioImageKharkiv,
+    tech: "React.js, Redux-Saga, Socket IO, Django",
   },
   {
     title: "Taipei Blueprint",
-    description: "Give a short description of your project here.",
-    url: "taipei-blueprint.vercel.app",
+    description: `Advocate citizens to shape their city. Comment on blueprint, 
+    share thoughts on Taipei's areas, and influence policy decisions. 
+    A data-driven platform connecting citizens and decision-makers.`,
+    url: "https://taipei-blueprint.vercel.app/",
     image: porfolioImageBlueprint,
+    tech: "React.js, React Query, Tailwind CSS",
   },
   {
-    title: "Project title 8",
-    description: "Give a short description of your project here.",
-    url: "https://timbaker.me",
-    image: porfolioImage8,
+    title: "Planning Better Future: Kharkiv",
+    description: `Harness citizen voices for post-war reconstruction. 
+    Empowering urban planners with an open-source participatory tool. 
+    Rebuilding Ukraine together through collective wisdom 
+    and sustainable interventions.
+    `,
+    url: "",
+    image: porfolioImageKharkiv,
+    tech: "React.js, Redux-Saga, Babylon.js, Colyseus, Django, MySQL",
   },
   {
-    title: "CSL x TUIC Smart Taipei",
-    description: "Give a short description of your project here.",
-    url: "https://taipei-basin-dashboard.vercel.app/",
-    image: porfolioImage9,
+    title: "CityGPT",
+    description: `Step into a world where imagination meets reality. 
+    Our cutting-edge AI model generates stunning cityscapes, 
+    bringing vision to life. From familiar streets to extraordinary realms, 
+    unleash artistic expression and shape the cities of tomorrow`,
+    url: "",
+    image: porfolioImageGenerativeAi,
+    tech: "React.js, Redux-Saga, Pytorch, FastAPI, Docker, PostgreSQL",
   },
   {
-    title: "Project title 10",
-    description: "Give a short description of your project here.",
-    url: "https://timbaker.me",
-    image: porfolioImage10,
-  },
-  {
-    title: "Object Detection and Tracking in Edge Device",
+    title: "Edge Device Detection Tracking",
     description: "Using Tensorflow Lite and OpenCV to detect and track object",
-    url: "https://timbaker.me",
-    image: porfolioImage11,
+    url: "https://ntut-club-animation.vercel.app",
+    image: porfolioImageCoralTrack,
+    tech: "Tensorflow Lite, OpenCV, Deep Sort, YoloV5, Coral Dev Board",
   },
+  {
+    title: "OpenHCI Campus Recycle Game",
+    description: `A fun-filled mission to tackle waste misclassification. 
+    Earn points, learn proper waste sorting, and champion environmental 
+    knowledge on campus`,
+    url: "",
+    image: porfolioImageOpenHCI,
+    tech: "Unity, React.js, Arduino",
+  },
+  {
+    title: "Self Moving Car",
+    description: `Representing school in the PBL competition, 
+    unite with Japanese and Taiwanese college students. Combining Arduino, 
+    C programming, and mechanical design, create 
+    self-propelled car.`,
+    url: "",
+    image: porfolioImagePbl,
+    tech: "Arduino, C, Mechanical Design",
+  },
+  {
+    title: "Programming Club Meeting App",
+    description: "Give a short description of your project here.",
+    url: "",
+    image: porfolioImageMeetingRoom,
+    tech: "Next.js, Socket IO, Three.js, Tailwind CSS",
+  },
+  // {
+  //   title: "taiwan island",
+  //   description: "",
+  //   url: "https://taipei-basin-dashboard.vercel.app/",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "netflix web and native",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "j55",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "design institute",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
 ];
 
 /**
@@ -439,8 +447,8 @@ export const experience: TimelineItem[] = [
     content: (
       <div className="flex flex-col gap-4">
         <p>
-          Open HCI (OpenHCI 人機互動工作坊) is a prestigious workshop in the
-          field of Human-Computer Interaction in Taiwan. As a Technical Teaching
+          Open HCI (人機互動工作坊) is a prestigious workshop in the field of
+          Human-Computer Interaction in Taiwan. As a Technical Teaching
           Assistant Department, I collaborate with other TAs in organizing the
           events regarding to technical sides, such as P5.js Arduino, Computer
           Vision. Try to making these differentiate from typical school course
@@ -477,10 +485,37 @@ export const skill: TimelineItem[] = [
     title: "Language",
     content: (
       <div className="flex flex-col gap-4">
-        {/* <p>
-          English: TOEIC: 925, TOEFL: 91, International volunteer, English
-          tutor, School international affair department volunteering
-        </p> */}
+        <p>
+          {/* English: TOEIC: 925, TOEFL: 91, International volunteer, English
+          tutor, School international affair department volunteering */}
+        </p>
+        <p>
+          Understanding in Mandarin, English, and basic Japanese give me chance
+          to actively participate in diverse international volunteer programs
+          and serve as an English tutor. These experiences have not only honed
+          my language skills but also instilled a deep appreciation for
+          cross-cultural communication. Additionally, I had the privilege of
+          contributing to my school's international affairs department as a
+          dedicated volunteer, where I played an instrumental role in organizing
+          and coordinating impactful international events and initiatives.
+        </p>
+        <p>
+          Moreover, my proficiency in basic Japanese allows me to navigate
+          everyday situations and effectively communicate in a multicultural
+          setting, showcasing my adaptability and eagerness to embrace new
+          languages and cultures.
+        </p>
+        <p>
+          The combination of my multilingual abilities and my diverse
+          experiences has provided me with a unique perspective and a strong
+          aptitude for connecting with individuals from diverse backgrounds. I
+          am confident that my linguistic versatility, coupled with my passion
+          for fostering intercultural understanding, will contribute to the
+          success of [company/organization name]. I am committed to continuously
+          expanding my linguistic horizons and making meaningful contributions
+          to further enhance communication and collaboration in diverse
+          environments.
+        </p>
       </div>
     ),
   },
@@ -674,11 +709,6 @@ export const socialLinks: Social[] = [
     Icon: LinkedInIcon,
     href: "https://www.linkedin.com/in/hungyuan/",
   },
-  // {
-  //   label: "Instagram",
-  //   Icon: InstagramIcon,
-  //   href: "https://www.instagram.com/tbakerx/",
-  // },
   {
     label: "Twitter",
     Icon: TwitterIcon,
