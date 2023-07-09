@@ -55,9 +55,8 @@ const Portfolio: FC = memo(() => {
                   <div className="my-4 flex flex-row text-sm text-neutral-400">
                     Tech: {tech ? tech : ""}
                   </div>
-                  <div className="my-4 flex flex-grow text-sm text-neutral-400">
-                    <div className="mr-2">{link && `Link:`}</div>
-
+                  <div className="my-4 justify-start text-sm text-neutral-400">
+                    <span className="mr-2">{link && `Link:`}</span>
                     {link &&
                       link.map((item, index) => (
                         <Link
