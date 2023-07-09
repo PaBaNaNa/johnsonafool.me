@@ -61,7 +61,6 @@ export interface Stat {
 /**
  * Skills section
  */
-
 export interface Skill {
   name: string;
   level: number;
@@ -76,13 +75,18 @@ export interface SkillGroup {
 /**
  * Portfolio section
  */
+export interface LinkItem {
+  text: string;
+  href: string;
+}
+
 export interface PortfolioItem {
   title: string;
   description: string;
   url: string;
   image: string | StaticImageData;
   tech?: string;
-  link?: unknown;
+  link?: LinkItem[];
 }
 
 /**

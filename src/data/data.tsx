@@ -233,7 +233,20 @@ export const portfolioItems: PortfolioItem[] = [
     url: "",
     image: porfolioImageTaipeiGisWeb,
     tech: "React.js, Redux-Saga, Socket IO, Django",
-    link: "https://smart-taipei.vercel.app/",
+    link: [
+      {
+        text: "Presentation Slides",
+        href: "https://docs.google.com/presentation/d/1os5MpUFEHXFZglBmmf_sKNRbm7r5exTLfnu5Xq4VScU/edit?usp=sharing",
+      },
+      {
+        text: "React Slides",
+        href: "https://docs.google.com/presentation/d/1os5MpUFEHXFZglBmmf_sKNRbm7r5exTLfnu5Xq4VScU/edit?usp=sharing",
+      },
+      {
+        text: "Presentation Facebook Post",
+        href: "https://www.facebook.com/photo/?fbid=773092807946615&set=pcb.773092944613268",
+      },
+    ],
   },
   {
     title: "Taipei Blueprint",
