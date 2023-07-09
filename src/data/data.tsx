@@ -95,18 +95,18 @@ export const heroData: Hero = {
     </>
   ),
   actions: [
-    {
-      // TODO: add update resume
-      href: "/assets/resume.pdf",
-      text: "Resume",
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
-    {
-      href: `mailto:johnsonafool@gmail.com`,
-      text: "Contact",
-      primary: false,
-    },
+    // {
+    //   // TODO: add update resume
+    //   href: "/assets/resume.pdf",
+    //   text: "Resume",
+    //   primary: true,
+    //   Icon: ArrowDownTrayIcon,
+    // },
+    // {
+    //   href: `mailto:johnsonafool@gmail.com`,
+    //   text: "Contact",
+    //   primary: false,
+    // },
   ],
 };
 
@@ -343,23 +343,23 @@ export const portfolioItems: PortfolioItem[] = [
       },
     ],
   },
-  {
-    title: "Programming Club Meeting App",
-    description: `Powered by Next.js 13, join our programming club's 
-    immersive 3D web meeting room. Experience the future of discussions, 
-    where in future will be Discord integration and an OpenAI-powered 
-    chatbot elevate knowledge sharing. Develop with Turbo Repo,    
-    `,
-    url: "",
-    image: porfolioImageMeetingRoom,
-    tech: "Next.js 13, Socket IO, Three.js, Tailwind CSS",
-    link: [
-      {
-        text: "App Demo",
-        href: "https://meeting-app-frontend.vercel.app/",
-      },
-    ],
-  },
+  // {
+  //   title: "Programming Club Meeting App",
+  //   description: `Powered by Next.js 13, join our programming club's
+  //   immersive 3D web meeting room. Experience the future of discussions,
+  //   where in future will be Discord integration and an OpenAI-powered
+  //   chatbot elevate knowledge sharing. Develop with Turbo Repo,
+  //   `,
+  //   url: "",
+  //   image: porfolioImageMeetingRoom,
+  //   tech: "Next.js 13, Socket IO, Three.js, Tailwind CSS",
+  //   link: [
+  //     {
+  //       text: "App Demo",
+  //       href: "https://meeting-app-frontend.vercel.app/",
+  //     },
+  //   ],
+  // },
   {
     title: "CityScope Taiwan Island Project",
     description: `Lorem Ipsum is simply dummy text of the printing and 
