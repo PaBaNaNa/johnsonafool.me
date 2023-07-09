@@ -33,7 +33,7 @@ const Portfolio: FC = memo(() => {
               >
                 <div
                   className={classNames(
-                    "relative h-80 w-auto overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl"
+                    "relative h-72 w-auto overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl"
                   )}
                 >
                   <Image
