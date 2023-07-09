@@ -55,16 +55,19 @@ const Portfolio: FC = memo(() => {
                   <div className="my-4 flex flex-row text-sm text-neutral-400">
                     Tech: {tech ? tech : ""}
                   </div>
-                  <div className="my-4 flex flex-row text-sm text-neutral-400">
-                    <div className="mr-2">Link: </div>
-                    {/* Link: {tech ? tech : ""} */}
-                    {/* some space in link and text */}
-                    <Link
-                      className="font-medium text-blue-600 underline hover:no-underline dark:text-blue-500"
-                      href="https://en.wikipedia.org/wiki/Next.js"
-                    >
-                      NextJS wikipedia
-                    </Link>
+                  <div className="my-4 flex flex-grow text-sm text-neutral-400">
+                    <div className="mr-2">{link && `Link:`}</div>
+
+                    {link &&
+                      link.map((item, index) => (
+                        <Link
+                          className="mr-2 font-medium text-sky-500 underline hover:no-underline dark:text-sky-400"
+                          href={item.href}
+                          key={`${item}-${index}`}
+                        >
+                          {item.text}
+                        </Link>
+                      ))}
                   </div>
                 </div>
               </div>

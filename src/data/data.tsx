@@ -235,15 +235,15 @@ export const portfolioItems: PortfolioItem[] = [
     tech: "React.js, Redux-Saga, Socket IO, Django",
     link: [
       {
-        text: "Presentation Slides",
-        href: "https://docs.google.com/presentation/d/1os5MpUFEHXFZglBmmf_sKNRbm7r5exTLfnu5Xq4VScU/edit?usp=sharing",
+        text: "Slides",
+        href: "https://docs.google.com/presentation/d/1H7_tLEYGnq9QImoCqG1hEHPcaFKUCPPrFXwjJ0VIuz0/edit?usp=sharing",
       },
       {
-        text: "React Slides",
-        href: "https://docs.google.com/presentation/d/1os5MpUFEHXFZglBmmf_sKNRbm7r5exTLfnu5Xq4VScU/edit?usp=sharing",
+        text: "React.js Made Slides Demo",
+        href: "https://taipei-basin-dashboard.vercel.app/",
       },
       {
-        text: "Presentation Facebook Post",
+        text: "Facebook Post",
         href: "https://www.facebook.com/photo/?fbid=773092807946615&set=pcb.773092944613268",
       },
     ],
@@ -253,9 +253,15 @@ export const portfolioItems: PortfolioItem[] = [
     description: `Advocate citizens to shape their city. Comment on blueprint, 
     share thoughts on Taipei's areas, and influence policy decisions. 
     A data-driven platform connecting citizens and decision-makers.`,
-    url: "https://taipei-blueprint.vercel.app/",
+    url: "",
     image: porfolioImageBlueprint,
     tech: "React.js, React Query, Tailwind CSS",
+    link: [
+      {
+        text: "Blueprint Demo",
+        href: "https://taipei-blueprint.vercel.app/",
+      },
+    ],
   },
   {
     title: "Planning Better Future: Kharkiv",
@@ -267,6 +273,16 @@ export const portfolioItems: PortfolioItem[] = [
     url: "",
     image: porfolioImageKharkiv,
     tech: "React.js, Redux-Saga, Babylon.js, Colyseus, Django, MySQL",
+    link: [
+      {
+        text: "Slides",
+        href: "https://docs.google.com/presentation/d/1aE0SKLxjxAxnWkV3sbdbFs1VPCc4kx5RsHqHEcTutiY/edit?usp=sharing",
+      },
+      {
+        text: "Issue Discussion in City Science Summit 2022",
+        href: "https://www.youtube.com/watch?v=q2A-BApijoc&list=PLdxKi6kbAWz4A5EB4V9P84vUFUSYpJR8w",
+      },
+    ],
   },
   {
     title: "CityGPT",
@@ -280,10 +296,17 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: "Edge Device Detection Tracking",
-    description: "Using Tensorflow Lite and OpenCV to detect and track object",
+    description:
+      "Tensorflow Lite and OpenCV to detect and track object, used in HITCON PEACE 2022",
     url: "https://ntut-club-animation.vercel.app",
     image: porfolioImageCoralTrack,
     tech: "Tensorflow Lite, OpenCV, Deep Sort, YoloV5, Coral Dev Board",
+    link: [
+      {
+        text: "HITCON PEACE 2022 News",
+        href: "https://www.inside.com.tw/article/28677-taiwan-hitcon-peace-2022",
+      },
+    ],
   },
   {
     title: "OpenHCI Campus Recycle Game",
@@ -293,6 +316,16 @@ export const portfolioItems: PortfolioItem[] = [
     url: "",
     image: porfolioImageOpenHCI,
     tech: "Unity, React.js, Arduino",
+    link: [
+      {
+        text: "Youtube Video",
+        href: "https://youtu.be/LCSyyrT7GcY",
+      },
+      {
+        text: "Facebook Post",
+        href: "https://www.facebook.com/openhci/photos/pb.100057624692945.-2207520000./5433225003405588/?type=3",
+      },
+    ],
   },
   {
     title: "Self Moving Car",
@@ -303,16 +336,29 @@ export const portfolioItems: PortfolioItem[] = [
     url: "",
     image: porfolioImagePbl,
     tech: "Arduino, C, Mechanical Design",
+    link: [
+      {
+        text: "Post",
+        href: "https://johnsonafool.netlify.app/posts/pbl/",
+      },
+    ],
   },
   {
     title: "Programming Club Meeting App",
-    description: `Lorem Ipsum is simply dummy text of the printing and 
-    typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-    ever since the 1500s, when an unknown printer took a galley of type and 
-    scrambled it to make a type specimen book.`,
+    description: `Powered by Next.js 13, join our programming club's 
+    immersive 3D web meeting room. Experience the future of discussions, 
+    where in future will be Discord integration and an OpenAI-powered 
+    chatbot elevate knowledge sharing. Develop with Turbo Repo,    
+    `,
     url: "",
     image: porfolioImageMeetingRoom,
-    tech: "Next.js, Socket IO, Three.js, Tailwind CSS",
+    tech: "Next.js 13, Socket IO, Three.js, Tailwind CSS",
+    link: [
+      {
+        text: "App Demo",
+        href: "https://meeting-app-frontend.vercel.app/",
+      },
+    ],
   },
   {
     title: "CityScope Taiwan Island Project",
@@ -322,7 +368,21 @@ export const portfolioItems: PortfolioItem[] = [
     scrambled it to make a type specimen book.`,
     url: "https://taipei-basin-dashboard.vercel.app/",
     image: porfolioImageTaiwanIsland,
-    tech: "React.js, Redux-Saga, Deck.gl, Styled Components",
+    tech: "React.js, Redux-Saga, Deck.gl, Styled Components, Unity",
+    link: [
+      {
+        text: "Web Demo",
+        href: "https://taiwan-island.vercel.app",
+      },
+      {
+        text: "AR Intro Slides",
+        href: "https://docs.google.com/presentation/d/18nl0ENlWXwZ3LwnVICH8LZecLICLH2ctupBdkbQFFeM/edit?usp=sharing",
+      },
+      {
+        text: "Interaction Intro Slides",
+        href: "https://docs.google.com/presentation/d/17-SVKXf4SjtUyVLddIxUeNF-m7E2J2EDng32DRM8wCY/edit?usp=sharing",
+      },
+    ],
   },
   // {
   //   title: "netflix web and native",
@@ -338,6 +398,18 @@ export const portfolioItems: PortfolioItem[] = [
   // },
   // {
   //   title: "design institute",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "degital pet",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "vue club animate",
   //   description: "",
   //   url: "https://timbaker.me",
   //   image: porfolioImage9,
