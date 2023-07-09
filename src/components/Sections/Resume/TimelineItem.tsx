@@ -12,7 +12,6 @@ const TimelineItem: FC<{ item: TimelineItem }> = memo(({ item }) => {
           <div className="flex-1 text-sm font-medium italic sm:flex-none">
             {location}
           </div>
-          {/* <div>•</div> */}
           <div className="flex-1 text-sm sm:flex-none">{date}</div>
         </div>
       </div>

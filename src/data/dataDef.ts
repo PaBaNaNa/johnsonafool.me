@@ -82,6 +82,7 @@ export interface PortfolioItem {
   url: string;
   image: string | StaticImageData;
   tech?: string;
+  link?: unknown;
 }
 
 /**

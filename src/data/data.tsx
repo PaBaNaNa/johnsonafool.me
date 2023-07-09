@@ -15,7 +15,6 @@ import aiTestimonialImage from "../images/generativeai.png";
 import aiImageOne from "../images/generativeai-1.png";
 import aiImageTwo from "../images/generativeai-2.png";
 import heroImageMediaLab from "../images/media-lab.webp";
-import porfolioImage9 from "../images/portfolio/portfolio-9.jpg";
 import porfolioImageBlueprint from "../images/portfolio/portfolio-blueprint.jpg";
 import porfolioImageCoralTrack from "../images/portfolio/portfolio-coral-track.jpg";
 import porfolioImageGenerativeAi from "../images/portfolio/portfolio-generative-ai.jpg";
@@ -24,6 +23,7 @@ import porfolioImageMeetingRoom from "../images/portfolio/portfolio-meeting-room
 import porfolioImageOpenHCI from "../images/portfolio/portfolio-openhci.jpg";
 import porfolioImagePbl from "../images/portfolio/portfolio-pbl.jpg";
 import porfolioImageTaipeiGisWeb from "../images/portfolio/portfolio-taipei-gis-web.jpg";
+import porfolioImageTaiwanIsland from "../images/portfolio/portfolio-taiwan-island.jpg";
 import profilepicBlackWhite from "../images/profile-black-white.jpg";
 import {
   About,
@@ -77,9 +77,7 @@ export const heroData: Hero = {
         currently working at{" "}
         <strong className="text-stone-100">
           City Science Taipei, MIT Media Lab
-        </strong>{" "}
-        {/* transforming cities through aiming at making urban city better, by doing
-        research and survey. */}
+        </strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I often use <strong className="text-stone-100">johnsonafool</strong> as
@@ -93,9 +91,6 @@ export const heroData: Hero = {
         <strong className="text-stone-100">Outdoor Activities</strong>,
         immersing on{" "}
         <strong className="text-stone-100">Postmodernist Literature</strong>.
-        {/* , or
-        engaging in{" "}
-        <strong className="text-stone-100">Volunteering Actives</strong>. */}
       </p>
     </>
   ),
@@ -232,15 +227,13 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: "CSL x TUIC Smart Taipei",
-    // description: "A Smart City Project with Taipei Urban Intelligence Center",
     description: `Explore Taipei's urban intelligence through stunning 
     visualizations. Collaborating for a smarter city experience. 
     Discover the unseen stories of Taipei`,
-    // title: "Self Driving Car",
-    // description: "Win a International Project Based Learning Competition",
     url: "",
     image: porfolioImageTaipeiGisWeb,
     tech: "React.js, Redux-Saga, Socket IO, Django",
+    link: "https://smart-taipei.vercel.app/",
   },
   {
     title: "Taipei Blueprint",
@@ -300,17 +293,24 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: "Programming Club Meeting App",
-    description: "Give a short description of your project here.",
+    description: `Lorem Ipsum is simply dummy text of the printing and 
+    typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+    ever since the 1500s, when an unknown printer took a galley of type and 
+    scrambled it to make a type specimen book.`,
     url: "",
     image: porfolioImageMeetingRoom,
     tech: "Next.js, Socket IO, Three.js, Tailwind CSS",
   },
-  // {
-  //   title: "taiwan island",
-  //   description: "",
-  //   url: "https://taipei-basin-dashboard.vercel.app/",
-  //   image: porfolioImage9,
-  // },
+  {
+    title: "CityScope Taiwan Island Project",
+    description: `Lorem Ipsum is simply dummy text of the printing and 
+    typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+    ever since the 1500s, when an unknown printer took a galley of type and 
+    scrambled it to make a type specimen book.`,
+    url: "https://taipei-basin-dashboard.vercel.app/",
+    image: porfolioImageTaiwanIsland,
+    tech: "React.js, Redux-Saga, Deck.gl, Styled Components",
+  },
   // {
   //   title: "netflix web and native",
   //   description: "",

@@ -30,17 +30,12 @@ const Testimonials: FC = memo(() => {
 
   const { imageSrc, testimonials, imageSrcCollection } = testimonial;
 
-  const resolveSrc = useMemo(() => {
-    if (!imageSrc) return undefined;
-    return typeof imageSrc === "string" ? imageSrc : imageSrc.src;
-  }, [imageSrc]);
-
   const resolveSrcCollection = useMemo(() => {
     if (!imageSrcCollection) return undefined;
     return imageSrcCollection.map((src) => {
       return typeof src === "string" ? src : src.src;
     });
-  }, [imageSrcCollection]) as any;
+  }, [imageSrcCollection]) as unknown as string[];
 
   // Mobile iOS doesn't allow background-fixed elements
   useEffect(() => {
@@ -153,10 +148,7 @@ const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean }> = memo(
       )}
     >
       {image ? (
-        <div className="relative h-14 w-14 shrink-0 sm:h-16 sm:w-16">
-          {/* <QuoteIcon className="absolute -left-2 -top-2 h-4 w-4 stroke-black text-white" />
-          <img className="h-full w-full rounded-full" src={image} /> */}
-        </div>
+        <div className="relative h-14 w-14 shrink-0 sm:h-16 sm:w-16"></div>
       ) : (
         <QuoteIcon className="h-5 w-5 shrink-0 text-white sm:h-8 sm:w-8" />
       )}
@@ -164,9 +156,6 @@ const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean }> = memo(
         <p className="prose prose-sm font-medium italic text-white sm:prose-base">
           {text}
         </p>
-        {/* <p className="text-xs italic text-white sm:text-sm md:text-base lg:text-lg">
-          -- {name}
-        </p> */}
       </div>
     </div>
   )
